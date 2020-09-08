@@ -11,10 +11,7 @@ export const GlobalStyles = createGlobalStyle`
     font-family: sans-serif;
     margin: 0;
     overflow: hidden;
-    background: linear-gradient(
-      #9198e5,
-      #e66465
-    );
+    background: linear-gradient(159deg, #636999, #6C8FF6);
   }
 `;
 

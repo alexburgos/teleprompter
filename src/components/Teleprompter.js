@@ -23,10 +23,10 @@ const Interim = styled.div`
 `;
 
 const cleanWord = (word) =>
-    word
-      .trim()
-      .toLocaleLowerCase()
-      .replace(/[^a-z]/gi, '');
+  word
+    .trim()
+    .toLocaleLowerCase()
+    .replace(/[^a-z]/gi, '');
 
 export default function Teleprompter({ words, progress, listening, onChange }) {
   const [results, setResults] = useState('');
@@ -50,7 +50,7 @@ export default function Teleprompter({ words, progress, listening, onChange }) {
   }, [listening]);
 
   useEffect(() => {
-    const handleResult = ({results}) => {
+    const handleResult = ({ results }) => {
       const interim = Array.from(results)
         .filter((r) => !r.isFinal)
         .map((r) => r[0].transcript)
